@@ -61,7 +61,7 @@ def a(client, message):
             #     return
 
             performer = f"@the_music_downloaderbot" 
-            thumb_name = f'thumb{message_id.message.id}.jpg'
+            thumb_name = f'thumb{message.message.id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
 
