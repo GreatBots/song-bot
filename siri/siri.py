@@ -23,7 +23,7 @@ APPER="shamilhabeeb"
 async def start(client, message):
     await message.reply(
     text=Config.START_MSG.format(message.from_user.mention),
-    reply_to_message_id=message.message_id
+    reply_to_message_id=message._id
     )
 
 def time_to_seconds(time):
